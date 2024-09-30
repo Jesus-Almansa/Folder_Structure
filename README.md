@@ -135,15 +135,6 @@ bash <(curl -s URL): This command uses curl to download the script and execute i
 
 wget -qO- URL | bash: This command uses wget to download the script and pipe it into bash.
 
-
-With the following commando you can download and execute the .sh file in one line:
-
-```bash
-bash <(curl -s https://raw.githubusercontent.com/Jesus-Almansa/Folder_Structure/main/create_project_structure.sh)
-```
-
-### Summary
-
 - **Option 1**: Store the script locally and add it to your `PATH` so you can call it from any directory.
 - **Option 2**: Create a small wrapper script in your project that calls the main script from a centralized location.
 - **Option 3**: Fetch the script from a GitHub repository or another remote location and execute it directly.
