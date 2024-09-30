@@ -2,7 +2,7 @@
 
 # Define the directories and files you want to create
 folders=("Notebooks" "data" "doc" "src" "src.egg-info")
-files=(".gitignore" "README.md" "setup.py")
+files=(".gitignore" "README.md" "setup.py" "src/__init__.py")
 
 # Create the directories
 for folder in "${folders[@]}"; do
