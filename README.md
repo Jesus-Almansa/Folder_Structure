@@ -139,3 +139,21 @@ wget -qO- URL | bash: This command uses wget to download the script and pipe it 
 - **Option 3**: Fetch the script from a GitHub repository or another remote location and execute it directly.
 
 These options allow you to set up your project structure more efficiently without copying the script every time.
+
+
+## To be able to call functions from any folder of the project we will need to call in the following way in our notebooks:
+
+```python
+from src.file.functions
+%load_ext autoreload
+%autoreload 2
+```
+
+**%load_ext autoreload** loads the autoreload extension in the Jupyter Notebook environment. The autoreload extension allows you to automatically reload modules that have been modified without the need to restart the kernel or manually reload modules.
+
+- Purpose: Automates the reloading of modules every time you make a change to them, which is useful if you are developing your own module or package and want to see the changes reflected immediately.
+
+**%autoreload 2**
+This command specifies the behavior of the autoreload extension. There are different modes in which autoreload can operate, and mode 2 means that all modules will be automatically reloaded before any cell is executed, if they have been modified since the last time they were imported.
+
+- Mode 2: Reloads all modules automatically before any cell is executed, if those modules have changed on disk.
