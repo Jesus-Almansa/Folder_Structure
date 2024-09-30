@@ -22,11 +22,17 @@
    ```python
    from setuptools import setup, find_packages
 
-    setup(
-        name="src",
-        version="0.1",
-        packages=find_packages()
-    )
+   setup(
+      name='your_project_name',
+      version='0.1.0',
+      packages=find_packages(where='src'),
+      package_dir={'': 'src'},
+      install_requires=[
+         # Add your project dependencies here
+      ],
+      author='Your Name',
+      description='A description of your project'
+   )
 
 ## How to Execute the `create_project_structure.sh` Script in a New Project
 
