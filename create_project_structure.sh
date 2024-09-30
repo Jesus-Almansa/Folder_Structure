@@ -21,7 +21,7 @@ for file in "${files[@]}"; do
     elif [ "$file" == ".gitignore" ]; then
         echo -e "# Add files or directories to ignore for version control" > "$file"
     elif [ "$file" == "setup.py" ]; then
-        echo -e "from setuptools import setup, find_packages\n\nsetup(\n    name='your_project_name',\n    version='0.1.0',\n    packages=find_packages(where='src'),\n    package_dir={'': 'src'},\n    install_requires=[\n        # Add your project dependencies here\n    ],\n    author='Your Name',\n    description='A description of your project)" > "$file"
+        echo -e "from setuptools import setup, find_packages\n\nsetup(\n    name='your_project_name',\n    version='0.1.0',\n    packages=find_packages(where='src'),\n    package_dir={'': 'src'},\n    install_requires=[\n        # Add your project dependencies here\n    ],\n    author='Your Name',\n    description='A description of your project'\n)" > "$file"
     fi
 done
 
