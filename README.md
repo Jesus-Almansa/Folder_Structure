@@ -139,7 +139,7 @@ wget -qO- URL | bash: This command uses wget to download the script and pipe it 
 With the following commando you can download and execute the .sh file in one line:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/Jesus-Almansa/Folder_Structure/main/create_project_structure.sh) && chmod +x create_project_structure.sh && ./create_project_structure.sh
+bash <(curl -s https://raw.githubusercontent.com/Jesus-Almansa/Folder_Structure/main/create_project_structure.sh)
 ```
 
 ### Summary
