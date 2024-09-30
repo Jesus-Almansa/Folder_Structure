@@ -119,13 +119,13 @@ Instead of copying the `create_project_structure.sh` script into every project, 
    - Use `curl` or `wget` to fetch and execute the script directly from the remote repository:
    
      ```bash
-     bash <(curl -s https://raw.githubusercontent.com/your-username/scripts-repo/main/create_project_structure.sh)
+     bash <(curl -s https://github.com/Jesus-Almansa/Folder_Structure/blob/main/create_project_structure.sh)
      ```
    
      Or with `wget`:
    
      ```bash
-     wget -qO- https://raw.githubusercontent.com/your-username/scripts-repo/main/create_project_structure.sh | bash
+     wget -qO- https://github.com/Jesus-Almansa/Folder_Structure/blob/main/create_project_structure.sh | bash
      ```
 
 ### Summary
